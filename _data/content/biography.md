@@ -127,7 +127,8 @@ Bürgermeister von Wittenberg (mit Unterbrechungen)
 1547-1550  
 zeitweiser Verlust seiner Anstellung als Hofmaler
 
-1550-1552  Aufenthalt in Augsburg und Innsbruck als Hofmaler des im Exil lebenden Johann Friedrich I.
+1550-1552 
+Aufenthalt in Augsburg und Innsbruck als Hofmaler des im Exil lebenden Johann Friedrich I.
 
 1552-1553  
 Arbeit in Weimar
