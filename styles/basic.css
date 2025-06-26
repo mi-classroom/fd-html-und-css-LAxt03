@@ -3,29 +3,29 @@ html{
 }
 
 body {
-    font-family: var(--font-family-primary);
     padding: var(--spacing-m);
-    color: var(--color-text-default);
     background-color: var(--color-background-default);
-    line-height: var(--line-height-loose);
+    color: var(--color-text-default);
+    font-family: var(--font-family-primary);
     font-weight: var(--font-weight-light);
+    line-height: var(--line-height-loose);
 }
 
 h1 {
+    margin-bottom: var(--spacing-3xl);
     font-size: var(--font-size-2xl);
     font-weight: var(--font-weight-regular);
-    margin-bottom: var(--spacing-3xl);
     line-height: var(--line-height-tight);
 }
 
 h2{
-    font-size: var(--font-size-xl);
     margin-top: var(--spacing-3xl);
+    font-size: var(--font-size-xl);
 }
 
 img{
-    width: 100%;
     display: block;
+    width: 100%;
 }
 
 p,
@@ -44,4 +44,19 @@ p, dd, li, figcaption{
 
 strong{
     font-weight: var(--font-weight-bold);
+}
+
+@media (width >= 900px) {
+    .toc{
+        max-width: 20rem;
+    }
+
+    main {
+        display: flex;
+    }
+
+    .main-content{
+        max-width: 50rem;
+        margin-top: 0;
+    }
 }

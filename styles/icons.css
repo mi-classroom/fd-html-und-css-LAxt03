@@ -26,6 +26,7 @@
     &.gold {
         color: gold;
     }
+
     &.md-dark {
         color: var(--dark);
     }
