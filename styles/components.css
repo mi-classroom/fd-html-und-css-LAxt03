@@ -1,47 +1,88 @@
-/*  infobox
-######################################### */
+/* Infobox
+############################################################################# */
 
-.infobox{
-    background-color: var(--color-background);
-    border-left: solid  gold;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    h3{
+.infobox {
+    background-color: var(--color-background-200);
+    border-left: solid var(--border-width-l) var(--color-primary-default);
+    /* Gold border */
+    padding: var(--spacing-m);
+    margin-bottom: var(--spacing-m);
+
+    h3:first-child {
         font-weight: bold;
     }
 }
 
-.image-with-caption{
-    background-color: var(--color-background);
-    width: min-content;
-    display: block;
+/* Image with Caption
+############################################################################# */
 
-    img{
+.image-with-caption {
+
+    img {
+        width: 100%;
+        display: block;
+    }
+
+    figcaption {
+        background-color: var(--color-background-200);
+        padding: var(--spacing-m);
+        font-size: var(--font-size-s);
+        line-height: var(--line-height-tight);
+    }
+}
+
+/* TOC
+############################################################################# */
+
+.toc {
+
+    h2 {
+        font-size: var(--font-size-xl);
 
     }
-    figcaption{
-        padding: 1rem;
-        lo{
-            margin-left: 1rem;
+
+    ul {
+        margin-top: var(--spacing-m);
+        margin-bottom: var(--spacing-xl);
+
+        li {
+            padding: var(--spacing-2xs);
+
+            margin: 0;
+            border-left: var(--border-width-m) solid var(--color-primary-300);
+            padding-left: var(--spacing-s);
+
+            a {
+                color: var(--color-text-default);
+                text-decoration: none;
+                opacity: 0.6;
+
+            }
+
+            &:hover {
+                border-left-color: var(--color-primary-default);
+
+                a {
+                    opacity: 1;
+                }
+            }
         }
     }
 }
 
-.onpage-nav {
-    h1,h2,h3{
-        font-weight: bold;
-        font-size: 1.5rem;
-    }
-    ol{
-        border-left: solid 0.2rem  #e0e0e0;
-        li{
-            a{color: black}
-            margin: 0.5rem;
-            margin-left: 1rem;
-            opacity: 0.6;
-        }
-        li:hover{
-            opacity: 1.0;
-        }
+/* Buttons
+  ############################################################################# */
+
+.button {
+    background-color: var(--color-primary-default);
+    padding: 0 var(--spacing-xs);
+    border: none;
+    color: #fff;
+    font-size: var(--font-size-l);
+    height: 38px;
+
+    &:active {
+        background-color: var(--color-primary-400);
     }
 }
+
