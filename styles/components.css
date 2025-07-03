@@ -37,7 +37,7 @@
 
 .toc {
     width: 100rem;
-
+    position: sticky;
     h2 {
         font-size: var(--font-size-xl);
 
@@ -50,7 +50,7 @@
         li {
             padding: var(--spacing-2xs);
             padding-left: var(--spacing-s);
-            border-left: var(--border-width-m) solid var(--color-primary-300);
+            border-left: var(--border-width-m) solid var(--color-background-200);
             margin: 0;
 
             a {
@@ -109,25 +109,3 @@ figure:has(img, figcaption){
     }
 }
 
-footer{
-    margin: 0;
-
-    /* TODO "win against footer and make him do what i want" */
-    background-color: var(--color-background-dark);
-    color: #fff;
-
-    div{
-        display: grid;
-        margin-top: 20vh; /* WHAT AM I DOING WRONG??? */
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-
-        img{
-             width: 10vw;
-            height: auto;
-        }
-    }
-
-    small{
-        horiz-align: center;
-    }
-}

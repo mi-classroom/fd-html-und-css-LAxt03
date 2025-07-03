@@ -1,0 +1,35 @@
+footer{
+    margin-top: var(--spacing-xl);
+    margin-left: calc(var(--spacing-m)*-1);
+    margin-bottom: calc(var(--spacing-l)*-1);
+    width: 100vw;
+
+    /* TODO "win against footer and make him do what i want" */
+    background-color: var(--color-background-dark);
+    color: #fff;
+
+    div{
+        display: grid;
+        padding: var(--spacing-m);
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        img{
+            width: 10vw;
+            height: auto;
+        }
+    }
+
+    a{
+        color: var(--color-background-default);
+
+        &:hover{
+            font-weight: var(--font-weight-bold);
+        }
+
+        text-decoration: none;
+    }
+
+    small{
+        padding: var(--spacing-m);
+    }
+}

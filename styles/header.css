@@ -3,6 +3,9 @@ body:has(.header-overlay.is-active) {
 }
 
 .header {
+
+    vertical-align: center;
+    margin-bottom: 0.7rem;
     .header-container {
         display: flex;
         justify-content: space-between;
@@ -15,6 +18,15 @@ body:has(.header-overlay.is-active) {
     .header-buttons {
         display: flex;
         gap: var(--spacing-m);
+
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        a{
+            @media (width < 700px){
+                display: none;
+            }
+        }
     }
 
     .header-button {

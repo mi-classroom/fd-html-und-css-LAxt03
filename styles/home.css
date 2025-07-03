@@ -1,0 +1,39 @@
+.home {
+    .main-content {
+        .hero-image {
+            margin-left: calc(var(--spacing-m) * -1);width: 100%;
+            position: relative;
+            width: 100vw;
+            h1 {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+
+                font-size: clamp(2rem, 10vw, 10rem);
+                font-weight: var(--font-weight-bold);
+                text-align: center;
+                line-height: var(--line-height-tighter);
+
+                text-transform: uppercase;
+                text-shadow: 0 0 10px hsl(0 0 0 / 1);
+
+
+            }
+
+            img {
+                width: 100vw;
+            }
+
+        }
+
+        main {
+            padding: 0;
+        }
+    }
+}

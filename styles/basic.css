@@ -42,6 +42,10 @@ p, dd, li, figcaption{
     hyphens: auto;;
 }
 
+dt{
+    border-top: solid var(--border-width-l) var(--color-background-200)
+}
+
 strong{
     font-weight: var(--font-weight-bold);
 }
